@@ -102,6 +102,8 @@ header i:hover{
 .resource-count{
     font-size: 2rem;
     line-height: 1;
+    color: #3075f4;
+
 }
 
 .suctions{
@@ -433,5 +435,6 @@ footer img{
     }
     .resource-count{
     font-size: 1.5rem;
+    
     }
 }
