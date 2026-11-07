@@ -11,6 +11,7 @@ body{
 }
 
 header{
+    color: #eee;
     background-color: white;
     align-items: center;
     display: flex;
@@ -19,6 +20,8 @@ header{
     z-index: 100;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     top: 0;
+    background-image: linear-gradient(90deg, rgba(8, 22, 39, 0.88) 0%, rgba(8, 22, 39, 0.67) 48%, rgba(8, 22, 39, 0.18) 100%), url("img/hero1.jpg");
+
 
 }
 
@@ -34,13 +37,77 @@ header i:hover{
 }
 
 .hero{
-    min-height: 50vh;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("img/df110b219be415bd913aa3387faa2552.jpg");
+    position: relative;
+    isolation: isolate;
+    min-height: clamp(320px, 42vw, 560px);
+    box-sizing: border-box;
+    padding: clamp(32px, 7vw, 96px) clamp(22px, 9vw, 140px);
+    overflow: hidden;
+    background-color: #0c1d31;
+    background-image: linear-gradient(90deg, rgba(8, 22, 39, 0.88) 0%, rgba(8, 22, 39, 0.67) 48%, rgba(8, 22, 39, 0.18) 100%), url("img/hero1.jpg");
     background-size: cover;
-    background-position: center;
-
+    background-position: center 48%;
+    border-bottom: 5px solid #3075f4;
+    box-shadow: 0 8px 24px rgba(12, 29, 49, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+
+
+.hero h1{
+    max-width: 480px;
+    margin: 0;
+    color: #fff;
+    font-size: clamp(2rem, 5vw, 4.25rem);
+    font-weight: 700;
+    line-height: 1.35;
+    /* text-wrap: balance; */
+    text-align: justify;
+    text-shadow: 0 3px 18px rgba(0, 0, 0, 0.32);
+}
+
+.span_hero{
+    display: inline-block;
+    color: #8db5ff;
+    font-size: 1.12em;
+    padding-inline: 0.08em;
+}
+
+.resource-types{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(20px, 4vw, 40px);
+    padding: 32px 24px;
+    background-color: white;
+}
+
+.resource-type{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    width: clamp(140px, 15vw, 190px);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #eee;
+    color: #0c1d31;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.resource-count{
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.suctions{
+    margin: 20px;
+    
+}
 
 .category{
     display: flex;
@@ -48,7 +115,7 @@ header i:hover{
 }
 
 .logo{
-    width: 170px;
+    width: 200px;
     margin: 20px 10px;
 
 }
@@ -73,7 +140,7 @@ header i:hover{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px;
-    margin-top: 20px;
+    margin: 13px;
 }
 
 
@@ -83,6 +150,8 @@ header i:hover{
     padding-bottom: 30px;
     border-radius: 10px;
     margin-top: 10px;  
+    text-wrap: balance;
+    
 
 }
 
@@ -185,8 +254,105 @@ a{
     border-radius: 10px;
 }
 
+footer{
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #0c1d31;
+    color: white;
+    align-items: center;
+
+}
+
+footer a{
+    color: white;
+}
+
+footer img{
+    width: 70px;
+}
+
+.explain{
+    margin: 13px;
+    background-color: white;
+    min-height: 100px;
+    border-bottom: 3px solid #0c1d31;
+    border-right: 3px solid #0c1d31;
+    border-radius: 15px;
+}
+
+.explain h1{
+    padding: 10px;
+    color: #3075f4;
+}
+
+.explain p{
+    margin: 10px;
+    font-size: 23px
+    
+}
+
+.plan h2{
+    margin: 20px;
+}
+
+.plan img{
+    max-width: 98%;
+    border-radius: 15px;
+}
+.plan_img{
+    display: flex;
+    justify-content: center;
+}
 
 @media only screen and (max-width: 600px){
+    .logo{
+        width: 112px;
+        margin: 12px 8px;
+    }
+
+    .category{
+        align-items: center;
+        gap: 7px;
+        margin-left: 8px;
+    }
+
+    .category h2{
+        font-size: 0.7rem;
+    }
+
+    header i{
+        font-size: 20px;
+    }
+
+    .hero{
+        min-height: 310px;
+        padding: 32px 22px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero h1{
+        max-width: 15ch;
+        font-size: clamp(1.8rem, 8vw, 2.7rem);
+        line-height: 1.5;
+    }
+
+    .resource-types{
+        gap: 10px;
+        padding: 24px 12px;
+    }
+
+    .resource-type{
+        width: clamp(90px, 28vw, 130px);
+        font-size: 1rem;
+    }
+
+    .card{
+        font-size: 0.9rem;
+    }
+
     .popup{
         width: calc(100vw - 24px);
         max-height: calc(100vh - 24px);
@@ -227,4 +393,45 @@ a{
         min-height: 44px;
     }
 
+    .hero{
+        min-height: 270px;
+        padding-inline: 16px;
+    }
+
+    .hero_img{
+        height: 150px;
+    }
+
+    .hero h1{
+        font-size: 1.1rem;
+        margin-right: 20px;
+    }
+
+    footer h3{
+        font-size: 10px;
+    }
+
+    footer div{
+        font-size: 10px;
+    }
+
+    footer img{
+        width: 50px;
+    }
+
+    .explain h1{
+        font-size: 20px;
+    }
+
+    .explain p{
+        font-size: 15px
+
+        
+    }
+    .plan img{
+        max-width: 95%;
+    }
+    .resource-count{
+    font-size: 1.5rem;
+    }
 }

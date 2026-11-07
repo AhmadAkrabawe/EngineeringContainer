@@ -50,6 +50,10 @@
                 <i class="fa-solid fa-calculator"></i> <br>
                 <span>إحصاء واحتمالات</span>    
             </div>
+            <div class="card" onclick="openPop10()">
+                <i class="fa-solid fa-calculator"></i> <br>
+                <span>تقنيات عددية</span>    
+            </div>
             <div class="card" onclick="openPop7()">
                 <i class="fa-solid fa-superscript"></i>               <br>
                 <span>معادلات تفاضلية عادية</span>    
@@ -57,6 +61,14 @@
             <div class="card" onclick="openPop8()">
                 <i class="fa-solid fa-superscript"></i>                <br>
                 <span>رياضيات تطبيقية للمهندسين</span>    
+            </div>
+            <div class="card" onclick="openPop12()">
+                <i class="fa-solid fa-drafting-compass"></i><br>
+                <span>رسم هندسي</span>    
+            </div>
+            <div class="card" onclick="openPop11()">
+                <i class="fa-solid fa-code"></i><br>
+                <span>C++</span>    
             </div>
 
 
@@ -78,6 +90,7 @@
                         <br>
                         ● شروحات:
                         <br>
+                        <a href="https://www.youtube.com/playlist?list=PL8PqiXhu9aUoL3i2MwTSYi33gtIMAykUp"><b>- شرح د.عبداللطيف</b></a>
                         <a href="https://www.youtube.com/playlist?list=PLSr-OUj6vInvJL5SXMDPjhrg0YEg3ysng"><b>- شرح د.كامل فليفل</b></a>
                         <br>
                         ● كتب:
@@ -113,6 +126,8 @@
                         <br>
                         ● شروحات:
                         <br>
+
+                        <a href="https://www.youtube.com/playlist?list=PLFi1eGgZ7jfW-rAw6mDCNCB-7jCBFPZWu"><b>- شرح د.عبداللطيف</b></a>
                         <a href="https://www.youtube.com/playlist?list=PLSr-OUj6vInu6gHD6q3LBd5jP-3LWuWtc"><b>- شرح د.كامل فليفل</b></a>
                         <br>
                         ● كتب:  
@@ -231,6 +246,7 @@
                         ● شروحات:
                         <br>
                         <a href="https://www.youtube.com/playlist?list=PLqj9DBCev8DL18IetJS8wuDDRC2i730vL"><b>- شرح حمزة ناهض</b></a>
+                        <a href="https://www.youtube.com/playlist?list=PL0o_zxa4K1BWziAvOKdqsMFSB_MyyLAqS"><b>- The Organic Chemistry Tutor</b></a>
                         <br>
                         ● كتب: 
                         <br>
@@ -275,7 +291,8 @@
                         ● كتب: 
                         <br>
                         <a href="https://kolegite.com/EE_library/books_and_lectures/%D0%9C%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0/Douglas%20C.%20Montgomery%2C%20George%20C.%20Runger%20-%20Applied%20Statistics%20and%20Probability%20for%20Engineers-Wiley%20%282018%29.pdf"><b>1- Applied Statistics and Probability for Engineers, 7th Edition</b></a><br>
-                        <a href="https://3lihandam69.wordpress.com/wp-content/uploads/2015/10/william_mendenhall_robert_j-_beaver_barbara_m-_bookfi-org.pdf"><b>2- Introduction to Probability and Statistics — William Mendenhall</b></a>
+                        <a href="https://3lihandam69.wordpress.com/wp-content/uploads/2015/10/william_mendenhall_robert_j-_beaver_barbara_m-_bookfi-org.pdf"><b>2- Introduction to Probability and Statistics — William Mendenhall</b></a><br>
+                        <a href="https://faculty.ksu.edu.sa/sites/default/files/%D9%85%D8%A8%D8%A7%D8%AF%D8%A6%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%AD%D8%B5%D8%A7%D8%A1%20%D9%88%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%85%D8%A7%D9%84%D8%A7%D8%AA.pdf"><b>3-مبادئ ي الإحصاء والاحتمالات</b></a>
                     </p>
                     <br>
                     <button onclick="openPop6()" class="close-btn">
@@ -363,10 +380,131 @@
                 </div>
             </div> 
         </div>
+        <div id="popupDialog_10" class="popup" style="visibility: hidden;">
+            <h3>تقنيات عددية</h3>
+            <div class="box_content">
+                <div class="right_content">
+                    <br>
+                    <br>
+                     <p>
+                        ● ملخصات: 
+                        <br>
+                        <a href="https://www.mediafire.com/file/yqa4d3jlxyiuk3n/%25D8%25AF%25D9%2581%25D8%25AA%25D8%25B1_%25D8%25A7%25D9%2584%25D9%2585%25D8%25A7%25D8%25AF%25D8%25A9_%25D8%25A7%25D8%25AD%25D9%2585%25D8%25AF_%25D8%25A7%25D9%2584%25D8%25B4%25D9%2586%25D8%25B7%25D9%258A.pdf/file"><b>دفتر أحمد الشنطي</b></a><br>
+                        <a href="https://www.mediafire.com/file/tliw2x64asd1yl9/%25D8%25AF%25D9%2581%25D8%25AA%25D8%25B1_%25D9%2588_%25D9%2585%25D9%2584%25D8%25AE%25D8%25B5_%25D8%25B9%25D8%25B6%25D9%2588_%25D8%25A7%25D9%2584%25D8%25A5%25D8%25AA%25D8%25AD%25D8%25A7%25D8%25AF_%25D8%25B4%25D9%2587%25D8%25AF_%25D8%25A7%25D9%2584%25D9%2583%25D9%2581%25D8%25A7%25D9%2588%25D9%258A%25D9%2586.pdf/file"><b>دفتر شهد الكفوين</b></a><br>
+                        <a href="https://www.mediafire.com/file/1dwjdqdidlmn0l2/%25D9%2585%25D9%2584%25D8%25AE%25D8%25B5_%25D8%25A7%25D9%2584%25D8%25A5%25D8%25AA%25D8%25AD%25D8%25A7%25D8%25AF_%25D8%25A7%25D9%2584%25D8%25AB%25D8%25A7%25D9%2586%25D9%258A_%25D9%2584%25D9%2584%25D8%25AA%25D9%2582%25D9%2586%25D9%258A%25D8%25A7%25D8%25AA_%25D8%25A7%25D9%2584%25D8%25B9%25D8%25AF%25D8%25AF%25D9%258A%25D8%25A9.pdf/file"><b>ملخص الاتحاد</b></a>
+                        <br>
+                        ● شروحات:
+                        <br>
+                        <a href="https://www.youtube.com/playlist?list=PLwnsB8R9rBO671t2Q5qQnVr9HfL4nMgsT"><b>- شرح كامل فليفل</b></a><br>
+                        <a href="https://www.youtube.com/watch?v=pfY0t8XADnA&list=PL-_Vu9osHhTRehWrWvTYCeKWJxTbXZfKc&pp=0gcJCVMDOCosWNin"><b>- Civil by Turk</b></a>
+                        <br>
+                        ● كتب: 
+                        <br>
+                        <a href="https://www.mbit.edu.in/wp-content/uploads/2020/05/Numerical_methods_for_engineers_for_engi.pdf"><b>1-Numerical Methods for Engineers — Chapra & Canale</b></a><br>
+                        <a href="https://koracademy.com/sites/default/files/inline-files/Applied_Num_Methods_with_Matlab_for_Engineers_3ed.pdf"><b>2-Applied Numerical Methods with MATLAB — Chapra</b></a>
 
+                    </p>
+                    <br>
+                    <button onclick="openPop10()" class="close-btn">
+                        إغلاق
+                    </button>
+                </div>
+                <div class="left_content">
+                    <img src="img/تقنيات.png" alt="">
+                </div>
 
+            </div>
+        </div>
 
+        <!-- C++ -->
+        <div id="popupDialog_11" class="popup" style="visibility: hidden;">
+            
+            <h3>C++</h3>
+            <div class="box_content">
+                <div class="right_content">
+                    <br>
+                    <br>
+                    <p>
+                        ● ملخصات: 
+                        <br>
+                        <a href="https://www.mediafire.com/file/vwp3kpz1qkjb4d0/%25D9%2585%25D9%2584%25D8%25AE%25D8%25B5_C%252B%252B%25D8%25AC%25D8%25AF%25D9%258A%25D8%25AF_88.pdf/file"><b>ملخص C++</b></a><br>
+                        <a href="https://www.mediafire.com/file/huffp0za030u78a/%25D8%25AF%25D9%2581%25D8%25AA%25D8%25B1_%25D8%25A7%25D9%2584%25D9%2585%25D8%25A7%25D8%25AF%25D8%25A9_%25D8%25A7%25D8%25AD%25D9%2585%25D8%25AF_%25D8%25A7%25D9%2584%25D8%25B4%25D9%2586%25D8%25B7%25D9%258A.pdf/file"><b>دفتر أحمد الشنطي</b></a><br>
+                        <a href="https://www.mediafire.com/file/qkq4asy4p88d4xp/%25D9%2585%25D9%2584%25D8%25AE%25D8%25B5_%25D8%25B9%25D9%258A%25D8%25AF_C%252B%252B.pdf/file"><b>ملخص عيد</b></a>
+                        <br>
+                        ● شروحات:
+                        <br>
+                        <a href="https://www.youtube.com/playlist?list=PL0DaWsemGktbg3wo9tMP4ZmTDFcEeqHV5"><b>- عمر الاخرس</b></a><br>
+                        <a href="https://www.youtube.com/playlist?list=PL0DaWsemGktZVpwGQPiyqq11RIeswPlyW"><b>- عمر عيد</b></a>
+                        <br>
+                        ● كتب: 
+                        <br>
+                        <a href="https://zhjwpku.com/assets/pdf/books/C++.Primer.5th.Edition_2013.pdf"><b>1-C++ Primer — Stanley B. Lippman, Josée Lajoie & Barbara E. Moo</b></a><br>
+                        <a href="https://chenweixiang.github.io/docs/The_C++_Programming_Language_4th_Edition_Bjarne_Stroustrup.pdf"><b>2-The C++ Programming Language — Bjarne Stroustrup</b></a><br>
+                        <a href="https://dn760109.eu.archive.org/0/items/EffectiveModernC/Effective-Modern-C%2B%2B.pdf"><b>3-Effective Modern C++ — Scott Meyers</b></a>
 
+                    </p>
+                    <br>
+                    <button onclick="openPop11()" class="close-btn">
+                        إغلاق
+                    </button>
+                </div>
+            
+                <div class="left_content">
+                    <img src="img/c++.jpg" alt="">
+                </div>
+            </div> 
+        </div>
+
+                <!-- الرسم الهندسي -->
+        <div id="popupDialog_12" class="popup" style="visibility: hidden;">
+            
+            <h3>الرسم الهندسي</h3>
+            <div class="box_content">
+                <div class="right_content">
+                    <br>
+                    <br>
+                    <p>
+                        ● ملخصات: 
+                        <br>
+                        <a href="https://drive.google.com/file/d/1Ry83Tk_4wKTEXFryZE40R5hQC0CA9x7i/view?usp=drive_link"><b>ملخص رسم يدوي</b></a><br>
+                        <a href="https://drive.google.com/file/d/1_akB30DzlCpy1hjjc84ass8pkt2EDxmy/view?usp=drive_link"><b>أوتوكاد</b></a>
+
+                        <br>
+                        ● شروحات:
+                        <br>
+                        <a href="https://www.youtube.com/watch?v=-fWvesHVFKI&list=PLAMNllAc1NDsKRK5PrnfNQK-7y60l4suX"><b>- Study time </b></a><br>
+                        <a href="https://www.youtube.com/watch?v=s4jhsT9_bBY&list=PLFUszXtJ26-7_pnYtWbCT-qKjD5w-oRzx"><b>- لجنة سنافر البوليتيكنيك(أوتوكاد) </b></a>
+                        <br>
+                        ● كتب: 
+                        <br>
+                        <a href="https://www.benardmakaa.com/wp-content/uploads/2023/01/3062.-Madsen-D.A.-Madsen-D.P.-Engineering-Drawing-Design.pdf"><b>1-Engineering Graphics Frederick E. Giesecke et al.</b></a><br>
+                        <a href="https://ia800105.us.archive.org/0/items/TextbookOfEngineeringDrawing_201802/Textbook%20of%20Engineering%20Drawing.pdf"><b>2-Engineering Drawing and Design David A. Madsen & David P. Madsen</b></a><br>
+                        <a href="https://www.mediafire.com/file/795x18zz6w5yj64/%25D9%2583%25D8%25AA%25D8%25A7%25D8%25A8_%25D8%25B1%25D8%25B3%25D9%2585_%25D9%2587%25D9%2586%25D8%25AF%25D8%25B3%25D9%258A_%25D9%258A%25D8%25AF%25D9%2588%25D9%258A.pdf/file"><b>3-الرسم الهندسي</b></a>
+
+                    </p>
+                    <br>
+                    <button onclick="openPop12()" class="close-btn">
+                        إغلاق
+                    </button>
+                </div>
+            
+                <div class="left_content">
+                    <img src="img/هندسي.jfif" alt="">
+                </div>
+            </div> 
+        </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
     </section>
 
@@ -454,8 +592,46 @@
                             "visible"
                             ? "hidden"
                             : "visible";}
+        function openPop10() {
+                    const popDialog =
+                        document.getElementById(
+                            "popupDialog_10"
+                        );
+                    popDialog.style.visibility =
+                        popDialog.style.visibility ===
+                            "visible"
+                            ? "hidden"
+                            : "visible";}
+        function openPop11() {
+                    const popDialog =
+                        document.getElementById(
+                            "popupDialog_11"
+                        );
+                    popDialog.style.visibility =
+                        popDialog.style.visibility ===
+                            "visible"
+                            ? "hidden"
+                            : "visible";}
+        function openPop12() {
+                    const popDialog =
+                        document.getElementById(
+                            "popupDialog_12"
+                        );
+                    popDialog.style.visibility =
+                        popDialog.style.visibility ===
+                            "visible"
+                            ? "hidden"
+                            : "visible";}
     </script>
 
-
+    <footer>
+        <h3>مستودع العلوم الهندسية</h3>
+        <div>مشاريع أخرى
+            <br>
+            <br>
+            <b><a href="https://maktabaatharia.srajarabic.com/">- المكتبة الأثرية</a></b>
+        </div>
+        <img src="img/شعار.png" alt="">
+    </footer>
 </body>
 </html>
